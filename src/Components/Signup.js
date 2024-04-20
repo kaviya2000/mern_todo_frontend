@@ -12,7 +12,7 @@ const Signup = () => {
     const[datas, setDatas]=useState([])
     
      const handlepost=()=>{
-        axios.post("http://localhost:5000/kaviya",{ names, fname, mname, age, email, password})
+        axios.post("https://mern-todo-backend-7rzq.onrender.com/kaviya",{ names, fname, mname, age, email, password})
         .then(()=>
     {
         alert("data saved successfully");
@@ -30,7 +30,7 @@ const Signup = () => {
      }
 
      const handleget=()=>{
-      axios.get("http://localhost:5000/anu")
+      axios.get("https://mern-todo-backend-7rzq.onrender.com/anu")
       .then((res)=>{
           setDatas(res.data)
     
